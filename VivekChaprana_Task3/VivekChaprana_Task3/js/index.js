@@ -22,7 +22,7 @@ for (let i of li) {
   const dateString = i.lastElementChild;
   const secLast = dateString.previousElementSibling;
   const starSpan = secLast.previousElementSibling;
-  const nameTag = starSpan.firstElementChild;
+  const nameTag = starSpan.previousElementSibling;
 
   const price = secLast.textContent.trim();
   const star = Number(starSpan.lastElementChild.textContent.trim());
